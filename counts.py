@@ -1,16 +1,16 @@
-from collections import Counter
-import matplotlib.pyplot as plt
-import os
-import glob
-from PIL import Image
-import numpy as np
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
-import cairosvg  # Install with: pip install cairosvg
 import io
+import os
+from collections import Counter
+
+import cairosvg  # Install with: pip install cairosvg
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.offsetbox import AnnotationBbox, OffsetImage
+from PIL import Image
 
 
 def count_languages():
-    with open("ALGORITHMS.md", "r", encoding="utf-8") as file:
+    with open("ALGORITHMS.md", encoding="utf-8") as file:
         content = file.read()
 
     # Skip the header row and extract table rows
@@ -56,6 +56,7 @@ def find_logo(language):
         "JavaScript": ["javascript", "js"],
         "TypeScript": ["typescript", "ts"],
         "pandas": ["pandas", "python_pandas"],
+        "q": ["kx-logo"],
     }
 
     # Special debug for C++
@@ -148,30 +149,28 @@ def resize_image_to_20x20(img_path):
             # For SVG files, convert to PNG first using cairosvg
             png_data = cairosvg.svg2png(url=img_path, output_width=20, output_height=20)
             img = Image.open(io.BytesIO(png_data))
-            img_array = np.array(img)
-            return img_array
-        else:
-            # For other image formats (PNG, JPG, etc.)
-            with Image.open(img_path) as img:
-                # Convert to RGBA to handle transparency properly
-                if img.mode != "RGBA":
-                    img = img.convert("RGBA")
+            return np.array(img)
 
-                # Create a white background
-                background = Image.new("RGBA", img.size, (255, 255, 255, 255))
+        # For other image formats (PNG, JPG, etc.)
+        with Image.open(img_path) as img:
+            # Convert to RGBA to handle transparency properly
+            if img.mode != "RGBA":
+                img = img.convert("RGBA")
 
-                # Paste the image on the background using alpha composite
-                background.paste(img, (0, 0), img)
+            # Create a white background
+            background = Image.new("RGBA", img.size, (255, 255, 255, 255))
 
-                # Convert back to RGB (remove alpha channel)
-                img = background.convert("RGB")
+            # Paste the image on the background using alpha composite
+            background.paste(img, (0, 0), img)
 
-                # Resize to 20x20 with antialiasing
-                img_resized = img.resize((20, 20), Image.LANCZOS)
+            # Convert back to RGB (remove alpha channel)
+            img = background.convert("RGB")
 
-                # Convert PIL image to numpy array for matplotlib
-                img_array = np.array(img_resized)
-                return img_array
+            # Resize to 20x20 with antialiasing
+            img_resized = img.resize((20, 20), Image.LANCZOS)
+
+            # Convert PIL image to numpy array for matplotlib
+            return np.array(img_resized)
     except Exception as e:
         print(f"Error processing image {img_path}: {e}")
         return None
@@ -182,7 +181,7 @@ def create_bar_chart_with_logos(counts):
     languages, counts_values = zip(*counts.most_common())
 
     # Create the bar chart with a clean, borderless style
-    fig, ax = plt.subplots(figsize=(16, 10))
+    _, ax = plt.subplots(figsize=(16, 10))
 
     # Remove the plot frame/border
     ax.spines["top"].set_visible(False)

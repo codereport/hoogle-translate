@@ -35,7 +35,7 @@
 (defn extract-algo [s] ;; TODO this is confusingly named (returns a list)
   [(-> s
        (str/split #"@")
-       (last)
+       (second)
        (normalize-algo)) s])
 
 (defn first-equals [s [a _]]

@@ -10,7 +10,7 @@ def parse_md_table(content):
     for line in lines:
         line = line.strip()
         # Skip header rows, separator rows, and empty lines
-        if not line or line.startswith("| :") or line.startswith("|    Language"):
+        if not line or line.startswith("| :") or line.startswith("|  Language"):
             continue
 
         if "J" in line:
@@ -22,13 +22,13 @@ def parse_md_table(content):
         # Remove empty first and last elements from split
         columns = [col for col in columns if col]
 
-        if len(columns) >= 5:  # Ensure we have enough columns
+        if len(columns) >= 4:  # Ensure we have enough columns
             # Language, Algorithm, ID, Doc Link, Library
             language = columns[0]
             algo = columns[1].strip("`")  # Strip backticks
             algo_id = columns[2]
             library = columns[3].replace("`", "")
-            doc_link = columns[4][6:-1]
+            doc_link = columns[4][6:-1] if len(columns) > 4 else ""
 
             # Add to data rows
             data_rows.append(
@@ -57,8 +57,8 @@ def generate_clojure_map(data_rows):
         library = row["lib"]
         sig = row["sig"] if row["sig"] and row["sig"] != "TODO" else "-"
 
-        # Format according to the original file pattern without backticks
-        result += f'"{language}@{algo}" {{:lang "{language}" :algo "{algo}" :lib "{library}" :id {algo_id} :doc "{doc_link}" :sig "{sig}"}}\n'
+        # Format according to the new file pattern with Language@Algorithm@Library
+        result += f'"{language}@{algo}@{library}" {{:lang "{language}" :algo "{algo}" :lib "{library}" :id {algo_id} :doc "{doc_link}" :sig "{sig}"}}\n'
 
     result += "})\n"
     return result
