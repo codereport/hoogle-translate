@@ -106,13 +106,18 @@
     "Uiua" "'Uiua386', monospace"
     "'JetBrains Mono', monospace"))
 
-(def third-party-libraries ["RAPIDS cuDF" "pandas" "NumPy" "range-v3" "core.matrix"])
+(def third-party-libraries
+  {"python"  ["RAPIDS cuDF" "pandas" "NumPy" "range-v3" "core.matrix", "more-itertools"]
+   "c++"     ["range-v3"]
+   "rust"    ["itertools"]
+   "clojure" ["core.matrix"]})
 
 (defn maybe-filter-third-party-libraries [coll]
   (filter (fn [item]
-            (let [lib (get-lib item)]
+            (let [lang (normalize-lang (get-lang item))
+                  lib  (get-lib item)]
               (or (:show-libraries @state)
-                  (not (and lib (some #(= lib %) third-party-libraries))))))
+                  (not (and lib (some #(= lib %) (get third-party-libraries lang)))))))
           coll))
 
 (defn maybe-filter-expressions [coll]
