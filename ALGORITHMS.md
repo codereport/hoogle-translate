@@ -672,3 +672,4 @@
 |     BQN     |      `⍋ (grade up)`       |   40   |           `-`           |       |                                      [doc](https://mlochbaum.github.io/BQN/help/gradeup_binsup.html#-%F0%9D%95%A9-grade-up)             |
 |     APL     |      `⍋ (grade up)`       |   40   |           `-`           |       |                                      [doc](https://microapl.com/apl_help/ch_020_020_630.htm)             |
 |     APL     |      `⍒ (grade down)`       |   39   |           `-`           |       |                                      [doc](https://microapl.com/apl_help/ch_020_020_640.htm)             |
+|    Julia    |      `findall`               |  18   |           `Base`        |       |                                      [doc](https://docs.julialang.org/en/v1/base/arrays/#Base.findall-Tuple{Function,%20Any})                   |       
