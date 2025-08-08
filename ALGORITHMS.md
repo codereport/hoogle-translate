@@ -673,3 +673,4 @@
 |     APL     |      `⍋ (grade up)`       |   40   |           `-`           |       |                                      [doc](https://microapl.com/apl_help/ch_020_020_630.htm)             |
 |     APL     |      `⍒ (grade down)`       |   39   |           `-`           |       |                                      [doc](https://microapl.com/apl_help/ch_020_020_640.htm)             |
 |    Julia    |      `findall`               |  18   |           `Base`        |       |                                      [doc](https://docs.julialang.org/en/v1/base/arrays/#Base.findall-Tuple{Function,%20Any})                   |       
+|      D      |            `bringToFront`            |   4104    |  `algorithm.mutation`  |       |                                       [doc](https://dlang.org/library/std/algorithm/mutation/bring_to_front.html)                                       |   
