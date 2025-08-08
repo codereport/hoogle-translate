@@ -674,4 +674,6 @@
 "BQN@⍋ (grade up)@-@40" {:lang "BQN" :algo "⍋ (grade up)" :lib "-" :id 40 :doc "https://mlochbaum.github.io/BQN/help/gradeup_binsup.html#-%F0%9D%95%A9-grade-up" :sig "-" :expr false}
 "APL@⍋ (grade up)@-@40" {:lang "APL" :algo "⍋ (grade up)" :lib "-" :id 40 :doc "https://microapl.com/apl_help/ch_020_020_630.htm" :sig "-" :expr false}
 "APL@⍒ (grade down)@-@39" {:lang "APL" :algo "⍒ (grade down)" :lib "-" :id 39 :doc "https://microapl.com/apl_help/ch_020_020_640.htm" :sig "-" :expr false}
+"Julia@findall@Base@18" {:lang "Julia" :algo "findall" :lib "Base" :id 18 :doc "https://docs.julialang.org/en/v1/base/arrays/#Base.findall-Tuple{Function,%20Any}" :sig "-" :expr false}
+"D@bringToFront@algorithm.mutation@4104" {:lang "D" :algo "bringToFront" :lib "algorithm.mutation" :id 4104 :doc "https://dlang.org/library/std/algorithm/mutation/bring_to_front.html" :sig "-" :expr false}
 })
