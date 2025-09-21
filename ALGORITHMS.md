@@ -672,5 +672,40 @@
 |     BQN     |      `⍋ (grade up)`       |   40   |           `-`           |       |                                      [doc](https://mlochbaum.github.io/BQN/help/gradeup_binsup.html#-%F0%9D%95%A9-grade-up)             |
 |     APL     |      `⍋ (grade up)`       |   40   |           `-`           |       |                                      [doc](https://microapl.com/apl_help/ch_020_020_630.htm)             |
 |     APL     |      `⍒ (grade down)`       |   39   |           `-`           |       |                                      [doc](https://microapl.com/apl_help/ch_020_020_640.htm)             |
-|    Julia    |      `findall`               |  18   |           `Base`        |       |                                      [doc](https://docs.julialang.org/en/v1/base/arrays/#Base.findall-Tuple{Function,%20Any})                   |       
-|      D      |            `bringToFront`            |   4104    |  `algorithm.mutation`  |       |                                       [doc](https://dlang.org/library/std/algorithm/mutation/bring_to_front.html)                                       |   
+|    Julia    |      `findall`               |  18   |           `Base`        |       |                                      [doc](https://docs.julialang.org/en/v1/base/arrays/#Base.findall-Tuple{Function,%20Any})                   |
+|      D      |            `bringToFront`            |   4104    |  `algorithm.mutation`  |       |                                       [doc](https://dlang.org/library/std/algorithm/mutation/bring_to_front.html)                                       |
+| JavaScript | `reduce` | 1 | `ramda` |  | [doc](https://ramdajs.com/docs/#reduce) |
+| JavaScript | `map` | 2 | `ramda` |  | [doc](https://ramdajs.com/docs/#map) |
+| JavaScript | `filter` | 3 | `ramda` |  | [doc](https://ramdajs.com/docs/#filter) |
+| JavaScript | `repeat` | 25 | `ramda` |  | [doc](https://ramdajs.com/docs/#repeat) |
+| JavaScript | `scan` | 4 | `ramda` |  | [doc](https://ramdajs.com/docs/#scan) |
+| JavaScript | `range` | 8 | `ramda` |  | [doc](https://ramdajs.com/docs/#range) |
+| JavaScript | `addIndex` | 9 | `ramda` |  | [doc](https://ramdajs.com/docs/#addIndex) |
+| JavaScript | `partition` | 13 | `ramda` |  | [doc](https://ramdajs.com/docs/#partition) |
+| JavaScript | `splitEvery` | 11 | `ramda` |  | [doc](https://ramdajs.com/docs/#splitEvery) |
+| JavaScript | `uniq` | 14 | `ramda` |  | [doc](https://ramdajs.com/docs/#uniq) |
+| JavaScript | `uniq` | 15 | `ramda` |  | [doc](https://ramdajs.com/docs/#uniq) |
+| JavaScript | `toString` | 16 | `ramda` |  | [doc](https://ramdajs.com/docs/#toString) |
+| JavaScript | `includes` | 17 | `ramda` |  | [doc](https://ramdajs.com/docs/#includes) |
+| JavaScript | `where` | 18 | `ramda` |  | [doc](https://ramdajs.com/docs/#where) |
+| JavaScript | `count` | 19 | `ramda` |  | [doc](https://ramdajs.com/docs/#count) |
+| JavaScript | `any` | 20 | `ramda` |  | [doc](https://ramdajs.com/docs/#any) |
+| JavaScript | `join` | 21 | `ramda` |  | [doc](https://ramdajs.com/docs/#join) |
+| JavaScript | `zip` | 28 | `ramda` |  | [doc](https://ramdajs.com/docs/#zip) |
+| JavaScript | `splitWhen` | 23 | `ramda` |  | [doc](https://ramdajs.com/docs/#splitWhen) |
+| JavaScript | `repeat` | 24 | `ramda` |  | [doc](https://ramdajs.com/docs/#repeat) |
+| JavaScript | `map` | 30 | `ramda` |  | [doc](https://ramdajs.com/docs/#map) |
+| JavaScript | `xprod` | 100 | `ramda` |  | [doc](https://ramdajs.com/docs/#xprod) |
+| JavaScript | `all` | 31 | `ramda` |  | [doc](https://ramdajs.com/docs/#all) |
+| JavaScript | `concat` | 42 | `ramda` |  | [doc](https://ramdajs.com/docs/#concat) |
+| JavaScript | `intersperse` | 12 | `ramda` |  | [doc](https://ramdajs.com/docs/#intersperse) |
+| JavaScript | `aperture` | 27 | `ramda` |  | [doc](https://ramdajs.com/docs/#aperture) |
+| JavaScript | `identity` | 5090 | `ramda` |  | [doc](https://ramdajs.com/docs/#identity) |
+| JavaScript | `flip` | 5030 | `ramda` |  | [doc](https://ramdajs.com/docs/#flip) |
+| JavaScript | `pipe` | 5020 | `ramda` |  | [doc](https://ramdajs.com/docs/#pipe) |
+| JavaScript | `reverse` | 4321 | `ramda` | Y | [doc](https://ramdajs.com/docs/#reverse) |
+| JavaScript | `init` | 33 | `ramda` |  | [doc](https://ramdajs.com/docs/#init) |
+| JavaScript | `drop` | 34 | `ramda` |  | [doc](https://ramdajs.com/docs/#drop) |
+| JavaScript | `take` | 35 | `ramda` |  | [doc](https://ramdajs.com/docs/#take) |
+| JavaScript | `max` | 37 | `ramda` |  | [doc](https://ramdajs.com/docs/#max) |
+| JavaScript | `min` | 38 | `ramda` |  | [doc](https://ramdajs.com/docs/#min) |
