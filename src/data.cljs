@@ -711,4 +711,7 @@
 "Kap@⍥ (over)@-@5740" {:lang "Kap" :algo "⍥ (over)" :lib "-" :id 5740 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_over" :sig "-" :expr false}
 "TinyAPL@⍥ (over)@-@5740" {:lang "TinyAPL" :algo "⍥ (over)" :lib "-" :id 5740 :doc "https://tinyapl.rubenverg.com/docs/primitive/over" :sig "-" :expr false}
 "Uiua@∩ (both)@-@5740" {:lang "Uiua" :algo "∩ (both)" :lib "-" :id 5740 :doc "https://www.uiua.org/docs/both" :sig "-" :expr false}
+"Uiua@⍥ (repeat)@-@5760" {:lang "Uiua" :algo "⍥ (repeat)" :lib "-" :id 5760 :doc "https://www.uiua.org/docs/repeat" :sig "-" :expr false}
+"BQN@⍟ (repeat)@-@5760" {:lang "BQN" :algo "⍟ (repeat)" :lib "-" :id 5760 :doc "https://mlochbaum.github.io/BQN/doc/repeat.html" :sig "-" :expr false}
+"APL@⍣ (power)@-@5760" {:lang "APL" :algo "⍣ (power)" :lib "-" :id 5760 :doc "https://aplwiki.com/wiki/Power_(operator)" :sig "-" :expr false}
 })
