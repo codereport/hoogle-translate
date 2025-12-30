@@ -19,4 +19,4 @@ Information to be included:
 
 ### Step 2: Check if programming language logo exists
 
-Check that the language logo for the image is in `public/media/logos/`. If it isn't please add one, and update the `src/ht/imgs.cljs` accordingly.
+Check that the language logo for the image is in `public/media/logos/`. If it isn't please add one, and update the `src/imgs.cljs` accordingly.

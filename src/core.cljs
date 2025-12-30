@@ -39,13 +39,26 @@
       (.log js/console "Error parsing URL params:" e)
       {})))
 
+(declare choose-filter)
+
+(defn result-length [search-text how-to-generate-table]
+  (let [matches (->> data/by-key-map
+                     ((choose-filter how-to-generate-table) search-text))]
+    (count matches)))
+
 (defn update-url [search-text search-type]
   (try
     (when (and search-text (not (str/blank? search-text)))
-      (let [new-url (str (.. js/window -location -pathname) 
-                         "?q=" (js/encodeURIComponent search-text) 
-                         "&type=" (name search-type))]
-        (.replaceState js/history #js {} "" new-url)))
+      (let [old-url (str (.. js/window -location -pathname) (.. js/window -location -search))]
+        (let [new-url (str (.. js/window -location -pathname)
+                           "?q=" (js/encodeURIComponent search-text)
+                           "&type=" (name search-type))]
+          ;; Only add it to the history navigation stack if there are search results
+          ;; (and it's not a redundant search) so the user's navigation history isn't
+          ;; full of pages they are probably not interested in.
+          (when (and (not= (str/lower-case old-url) (str/lower-case new-url)) (> (result-length search-text search-type) 0))
+            (.pushState js/history #js {} "" new-url))
+          (.replaceState js/history #js {} "" new-url))))
     (catch js/Error e
       (.log js/console "Error updating URL:" e))))
 
@@ -778,4 +791,5 @@
    [app-view]
    (js/document.getElementById "app"))
   ;; Initialize from URL parameters if present
-  (js/setTimeout init-from-url 300))
+  (js/setTimeout init-from-url 300)
+  (.addEventListener js/window "popstate" init-from-url))
