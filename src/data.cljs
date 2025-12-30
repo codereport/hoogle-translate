@@ -714,4 +714,13 @@
 "Uiua@⍥ (repeat)@-@5760" {:lang "Uiua" :algo "⍥ (repeat)" :lib "-" :id 5760 :doc "https://www.uiua.org/docs/repeat" :sig "-" :expr false}
 "BQN@⍟ (repeat)@-@5760" {:lang "BQN" :algo "⍟ (repeat)" :lib "-" :id 5760 :doc "https://mlochbaum.github.io/BQN/doc/repeat.html" :sig "-" :expr false}
 "APL@⍣ (power)@-@5760" {:lang "APL" :algo "⍣ (power)" :lib "-" :id 5760 :doc "https://aplwiki.com/wiki/Power_(operator)" :sig "-" :expr false}
+"Uiua@⧈-@-@41" {:lang "Uiua" :algo "⧈-" :lib "-" :id 41 :doc "" :sig "-" :expr true}
+"APL@2-/@-@41" {:lang "APL" :algo "2-/" :lib "-" :id 41 :doc "" :sig "-" :expr true}
+"Kap@2-/@-@41" {:lang "Kap" :algo "2-/" :lib "-" :id 41 :doc "" :sig "-" :expr true}
+"BQN@-´2↕@-@41" {:lang "BQN" :algo "-´2↕" :lib "-" :id 41 :doc "" :sig "-" :expr true}
+"Julia@diff@Base@41" {:lang "Julia" :algo "diff" :lib "Base" :id 41 :doc "https://docs.julialang.org/en/v1/base/arrays/#Base.diff" :sig "-" :expr false}
+"MATLAB@diff@-@41" {:lang "MATLAB" :algo "diff" :lib "-" :id 41 :doc "https://www.mathworks.com/help/matlab/ref/diff.html" :sig "-" :expr false}
+"Python@diff@NumPy@41" {:lang "Python" :algo "diff" :lib "NumPy" :id 41 :doc "https://numpy.org/doc/stable/reference/generated/numpy.diff.html" :sig "-" :expr false}
+"R@diff@base@41" {:lang "R" :algo "diff" :lib "base" :id 41 :doc "https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/diff" :sig "-" :expr false}
+"q@deltas@-@41" {:lang "q" :algo "deltas" :lib "-" :id 41 :doc "https://code.kx.com/q/ref/deltas/" :sig "-" :expr false}
 })
