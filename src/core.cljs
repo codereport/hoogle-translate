@@ -257,8 +257,12 @@
                    :background-color (nth excel-colors color-index)}} 
       (format-algorithm-with-fonts (get info-map :algo) lang)]
      [:td {:style {:padding "12px 30px" :color text-color}} (get info-map :lib)]
-     [:td {:style {:padding "12px 30px"}} [:a {:href (get info-map :doc)
-                                              :style {:color (:primary colors)}} "Doc"]]]))
+     [:td {:style {:padding "12px 30px"}} 
+      (let [doc-url (get info-map :doc)]
+        (if (and doc-url (not= doc-url "") (not= doc-url "-"))
+          [:a {:href doc-url
+               :style {:color (:primary colors)}} "Doc"]
+          [:span {:style {:color text-color}} "-"]))]]))
 
 (defn choose-filter [how-to-generate-table]
   (case how-to-generate-table
