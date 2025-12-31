@@ -717,7 +717,7 @@
 "Uiua@⧈-@-@41" {:lang "Uiua" :algo "⧈-" :lib "-" :id 41 :doc "" :sig "-" :expr true}
 "APL@2-/@-@41" {:lang "APL" :algo "2-/" :lib "-" :id 41 :doc "" :sig "-" :expr true}
 "Kap@2-/@-@41" {:lang "Kap" :algo "2-/" :lib "-" :id 41 :doc "" :sig "-" :expr true}
-"BQN@-´2↕@-@41" {:lang "BQN" :algo "-´2↕" :lib "-" :id 41 :doc "" :sig "-" :expr true}
+"BQN@-´˘2↕@-@41" {:lang "BQN" :algo "-´˘2↕" :lib "-" :id 41 :doc "" :sig "-" :expr true}
 "Julia@diff@Base@41" {:lang "Julia" :algo "diff" :lib "Base" :id 41 :doc "https://docs.julialang.org/en/v1/base/arrays/#Base.diff" :sig "-" :expr false}
 "MATLAB@diff@-@41" {:lang "MATLAB" :algo "diff" :lib "-" :id 41 :doc "https://www.mathworks.com/help/matlab/ref/diff.html" :sig "-" :expr false}
 "Python@diff@NumPy@41" {:lang "Python" :algo "diff" :lib "NumPy" :id 41 :doc "https://numpy.org/doc/stable/reference/generated/numpy.diff.html" :sig "-" :expr false}
