@@ -723,4 +723,8 @@
 "Python@diff@NumPy@41" {:lang "Python" :algo "diff" :lib "NumPy" :id 41 :doc "https://numpy.org/doc/stable/reference/generated/numpy.diff.html" :sig "-" :expr false}
 "R@diff@base@41" {:lang "R" :algo "diff" :lib "base" :id 41 :doc "https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/diff" :sig "-" :expr false}
 "q@deltas@-@41" {:lang "q" :algo "deltas" :lib "-" :id 41 :doc "https://code.kx.com/q/ref/deltas/" :sig "-" :expr false}
+"APL@⌈/@-@37" {:lang "APL" :algo "⌈/" :lib "-" :id 37 :doc "" :sig "-" :expr true}
+"BQN@⌈´@-@37" {:lang "BQN" :algo "⌈´" :lib "-" :id 37 :doc "" :sig "-" :expr true}
+"Kap@⌈/@-@37" {:lang "Kap" :algo "⌈/" :lib "-" :id 37 :doc "" :sig "-" :expr true}
+"Uiua@/↥@-@37" {:lang "Uiua" :algo "/↥" :lib "-" :id 37 :doc "" :sig "-" :expr true}
 })
