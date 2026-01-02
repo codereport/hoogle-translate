@@ -223,7 +223,7 @@
 "Rust@chunks@itertools@11" {:lang "Rust" :algo "chunks" :lib "itertools" :id 11 :doc "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.chunks" :sig "-" :expr false}
 "Rust@chunks@-@11" {:lang "Rust" :algo "chunks" :lib "-" :id 11 :doc "https://doc.rust-lang.org/std/primitive.slice.html#method.chunks" :sig "-" :expr false}
 "Scala@grouped@various@11" {:lang "Scala" :algo "grouped" :lib "various" :id 11 :doc "https://scala-lang.org/api/current/scala/collection/ArrayOps.html#grouped-fffffbef" :sig "-" :expr false}
-"Uiua@⧈∘¤¤ (stencil id fix fix)@-@11" {:lang "Uiua" :algo "⧈∘¤¤ (stencil id fix fix)" :lib "-" :id 11 :doc "https://www.uiua.org/docs/stencil" :sig "-" :expr true}
+"Uiua@⧈⌞∘ (stencil__< id)@-@11" {:lang "Uiua" :algo "⧈⌞∘ (stencil__< id)" :lib "-" :id 11 :doc "https://www.uiua.org/docs/stencil" :sig "-" :expr true}
 "☾@ᙧ  (window)@-@11" {:lang "☾" :algo "ᙧ  (window)" :lib "-" :id 11 :doc "https://ganer.xyz/moon/?code=%22docs%20are%20WIP%22%E2%A8%9D%F3%B0%BB%BE%E2%A8%81%E2%98%BE" :sig "-" :expr false}
 "Agda@intersperse@Data.List@12" {:lang "Agda" :algo "intersperse" :lib "Data.List" :id 12 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#1819" :sig "-" :expr false}
 "Elixir@intersperse@Enum@12" {:lang "Elixir" :algo "intersperse" :lib "Enum" :id 12 :doc "https://hexdocs.pm/elixir/1.12/Enum.html#intersperse/2" :sig "-" :expr false}
