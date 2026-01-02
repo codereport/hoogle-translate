@@ -97,7 +97,7 @@
 "☾@󰈲  (filter positive)@-@3" {:lang "☾" :algo "󰈲  (filter positive)" :lib "-" :id 3 :doc "https://ganer.xyz/moon/?code=%22docs%20are%20WIP%22%E2%A8%9D%F3%B0%BB%BE%E2%A8%81%E2%98%BE" :sig "-" :expr false}
 "APL@\\ (scan)@-@4" {:lang "APL" :algo "\\ (scan)" :lib "-" :id 4 :doc "http://microapl.com/apl_help/ch_020_020_820.htm" :sig "-" :expr false}
 "Agda@scanl@various@4" {:lang "Agda" :algo "scanl" :lib "various" :id 4 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Scans.Base.html#1105" :sig "-" :expr false}
-"BQN@@-@4" {:lang "BQN" :algo "" :lib "-" :id 4 :doc "https://mlochbaum.github.io/BQN/help/scan.html" :sig "-" :expr false}
+"BQN@ ` @-@4" {:lang "BQN" :algo " ` " :lib "-" :id 4 :doc "https://mlochbaum.github.io/BQN/help/scan.html" :sig "-" :expr false}
 "C++@inclusive_scan@<numeric>@4" {:lang "C++" :algo "inclusive_scan" :lib "<numeric>" :id 4 :doc "https://en.cppreference.com/w/cpp/algorithm/inclusive_scan" :sig "-" :expr false}
 "C++@partial_sum@<numeric>@4" {:lang "C++" :algo "partial_sum" :lib "<numeric>" :id 4 :doc "https://en.cppreference.com/w/cpp/algorithm/partial_sum" :sig "-" :expr false}
 "CUDA@inclusive_scan@Thrust@4" {:lang "CUDA" :algo "inclusive_scan" :lib "Thrust" :id 4 :doc "https://thrust.github.io/doc/group__prefixsums_gafb24ad76101263038b0acaddc094d70a.html" :sig "-" :expr false}
