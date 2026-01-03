@@ -725,3 +725,4 @@
 |     BQN     |             `⌈´`             |   37   |           `-`           |   Y   |                                                                       -                                                                        |
 |     Kap     |             `⌈/`             |   37   |           `-`           |   Y   |                                                                       -                                                                        |
 |    Uiua     |             `/↥`             |   37   |           `-`           |   Y   |                                                                       -                                                                        |
+|    Rust     |         `all_equal`          |   51   |       `itertools`       |       |                            [doc](https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.all_equal)                             |
