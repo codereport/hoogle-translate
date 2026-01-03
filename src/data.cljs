@@ -727,4 +727,5 @@
 "BQN@⌈´@-@37" {:lang "BQN" :algo "⌈´" :lib "-" :id 37 :doc "" :sig "-" :expr true}
 "Kap@⌈/@-@37" {:lang "Kap" :algo "⌈/" :lib "-" :id 37 :doc "" :sig "-" :expr true}
 "Uiua@/↥@-@37" {:lang "Uiua" :algo "/↥" :lib "-" :id 37 :doc "" :sig "-" :expr true}
+"Rust@all_equal@itertools@51" {:lang "Rust" :algo "all_equal" :lib "itertools" :id 51 :doc "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.all_equal" :sig "-" :expr false}
 })
