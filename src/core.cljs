@@ -553,7 +553,8 @@
   [:div {:style {:font-size 12 :font-family "'JetBrains Mono', monospace"}}
    [:br]
    [:label "If you would like to contribute a missing language or algorithm, "]
-   [:a {:href "https://github.com/codereport/hoogle-translate/blob/main/CONTRIBUTING.md"} [:label "file a PR"]]
+   [:a {:href "https://github.com/codereport/hoogle-translate/blob/main/CONTRIBUTING.md"
+        :class "footnote-link"} [:label "file a PR"]]
    [:label "."]])
 
 (defn save-theme-to-storage [theme]
@@ -572,7 +573,11 @@
                             (.appendChild (.-head js/document) el)
                             el))]
     (set! (.-innerHTML style-element) 
-          (str "body { background-color: " (:background colors) "; margin: 0; padding: 0; }"))))
+          (str "body { background-color: " (:background colors) "; margin: 0; padding: 0; }"
+               ".footnote-link { color: " (:text colors) " !important; }"
+               ".footnote-link:visited { color: " (:text colors) " !important; }"
+               ".footnote-link:hover { color: " (:text colors) " !important; }"
+               ".footnote-link:active { color: " (:text colors) " !important; }"))))
 
 (defn theme-toggle []
   [:button
