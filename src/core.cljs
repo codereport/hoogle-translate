@@ -49,10 +49,14 @@
 (defn update-url [search-text search-type]
   (try
     (when (and search-text (not (str/blank? search-text)))
-      (let [old-url (str (.. js/window -location -pathname) (.. js/window -location -search))]
+      (let [old-url (str (.. js/window -location -pathname) (.. js/window -location -search))
+            show-expr (if (:show-expressions @state) "true" "false")
+            show-libs (if (:show-libraries @state) "true" "false")]
         (let [new-url (str (.. js/window -location -pathname)
                            "?q=" (js/encodeURIComponent search-text)
-                           "&type=" (name search-type))]
+                           "&type=" (name search-type)
+                           "&expr=" show-expr
+                           "&libs=" show-libs)]
           ;; Only add it to the history navigation stack if there are search results
           ;; (and it's not a redundant search) so the user's navigation history isn't
           ;; full of pages they are probably not interested in.
@@ -650,6 +654,8 @@
                                  (let [selection (or (:selection @state) (:search-text @state))
                                        how-to-generate-table (:how-to-generate-table @state)]
                                    (when (and selection how-to-generate-table)
+                                     ;; Update URL with new settings
+                                     (update-url (or (:search-text @state) selection) how-to-generate-table)
                                      (swap! state assoc :results-table
                                             (generate-table selection how-to-generate-table))))))}]
          " Show Expressions"]]
@@ -668,6 +674,8 @@
                                  (let [selection (or (:selection @state) (:search-text @state))
                                        how-to-generate-table (:how-to-generate-table @state)]
                                    (when (and selection how-to-generate-table)
+                                     ;; Update URL with new settings
+                                     (update-url (or (:search-text @state) selection) how-to-generate-table)
                                      (swap! state assoc :results-table
                                             (generate-table selection how-to-generate-table))))))}]
          " Show Third Party Libraries"]]])))
@@ -778,7 +786,17 @@
         q (:q params)
         type-str (:type params)
         search-type (when type-str (keyword type-str))
+        show-expr-str (:expr params)
+        show-libs-str (:libs params)
+        show-expressions (= show-expr-str "true")
+        show-libraries (= show-libs-str "true")
         theme (:theme @state)]
+    ;; Update settings from URL parameters if they exist
+    (when show-expr-str
+      (swap! state assoc :show-expressions show-expressions))
+    (when show-libs-str
+      (swap! state assoc :show-libraries show-libraries))
+    
     (when (and q (not (str/blank? q)))
       (js/console.log "Initializing search from URL:" q "type:" (or search-type "default"))
       
@@ -791,6 +809,8 @@
                              :theme theme
                              :search-text q
                              :selection selection
+                             :show-expressions show-expressions
+                             :show-libraries show-libraries
                              :how-to-generate-table how-to-generate-table
                              :results-table (generate-table selection how-to-generate-table)}))))))
 
