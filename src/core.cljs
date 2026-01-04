@@ -175,7 +175,7 @@
                 (not (:expr item))))
           coll))
 
-(defn format-algorithm-with-fonts [algo-text lang]
+(defn format-algorithm-with-fonts [algo-text lang is-expr]
   (let [special-font (get-algorithm-font lang)
         default-font "'JetBrains Mono', monospace"
         parts (str/split algo-text #" " 2)] ; Split on first space only
@@ -183,9 +183,12 @@
       ;; If there are multiple parts, apply different fonts
       [:span
        [:span {:style {:font-family special-font :font-weight "normal"}} (first parts)]
-       [:span {:style {:font-family default-font}} (str " " (second parts))]]
+       [:span {:style {:font-family default-font :font-weight "bold"}} 
+        (str " " (second parts))]]
       ;; Otherwise use the special font for the entire text
-      [:span {:style {:font-family special-font}} algo-text])))
+      [:span {:style (merge {:font-family special-font}
+                            (when-not is-expr {:font-weight "bold"}))} 
+       algo-text])))
 
 (defn get-logo-filename [lang theme]
   (let [base-filename (get imgs/logo-map lang)
@@ -257,9 +260,8 @@
        (get info-map :lang)]
      
      [:td {:style {:padding "12px 30px"
-                   :font-weight "bold"
                    :background-color (nth excel-colors color-index)}} 
-      (format-algorithm-with-fonts (get info-map :algo) lang)]
+      (format-algorithm-with-fonts (get info-map :algo) lang (get info-map :expr))]
      [:td {:style {:padding "12px 30px" :color text-color}} (get info-map :lib)]
      [:td {:style {:padding "12px 30px"}} 
       (let [doc-url (get info-map :doc)]
@@ -396,7 +398,6 @@
          (if (seq matching-entries)
            ;; Found algorithm for this language
            [:td {:style {:padding "12px 30px"
-                         :font-weight "bold"
                          :background-color (nth excel-colors color-index)}
                  :on-click (fn [e]
                              (.stopPropagation e)
@@ -407,7 +408,7 @@
                                                   :selection algo-id
                                                   :how-to-generate-table :by-algo-id
                                                   :results-table (generate-table algo-id :by-algo-id)})))} 
-            (format-algorithm-with-fonts (get-algo (first matching-entries)) language-name)]
+            (format-algorithm-with-fonts (get-algo (first matching-entries)) language-name (get (first matching-entries) :expr))]
            
            ;; Algorithm not found for this language
            [:td {:style {:padding "12px 30px"}} "😢"])))]))
