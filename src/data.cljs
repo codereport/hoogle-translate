@@ -47,6 +47,8 @@
 "☾@ſ  (fold)@-@1" {:lang "☾" :algo "ſ  (fold)" :lib "-" :id 1 :doc "https://ganer.xyz/moon/?code=%22docs%20are%20WIP%22%E2%A8%9D%F3%B0%BB%BE%E2%A8%81%E2%98%BE" :sig "-" :expr false}
 "APL@¨ (each)@-@2" {:lang "APL" :algo "¨ (each)" :lib "-" :id 2 :doc "http://microapl.com/apl_help/ch_020_020_900.htm" :sig "-" :expr false}
 "Agda@map@various@2" {:lang "Agda" :algo "map" :lib "various" :id 2 :doc "https://agda.github.io/agda-stdlib/v2.2/Data.List.Base.html#1634" :sig "-" :expr false}
+"BQN@¨ (each)@-@2" {:lang "BQN" :algo "¨ (each)" :lib "-" :id 2 :doc "https://mlochbaum.github.io/BQN/doc/map.html" :sig "-" :expr false}
+"BQN@˘ (cells)@-@2" {:lang "BQN" :algo "˘ (cells)" :lib "-" :id 2 :doc "https://mlochbaum.github.io/BQN/doc/rank.html" :sig "-" :expr false}
 "C++@transform@<algorithm>@2" {:lang "C++" :algo "transform" :lib "<algorithm>" :id 2 :doc "https://en.cppreference.com/w/cpp/algorithm/transform" :sig "-" :expr false}
 "Clojure@map@core@2" {:lang "Clojure" :algo "map" :lib "core" :id 2 :doc "https://clojuredocs.org/clojure.core/map" :sig "-" :expr false}
 "Common Lisp@map@-@2" {:lang "Common Lisp" :algo "map" :lib "-" :id 2 :doc "https://novaspec.org/cl/f_map" :sig "-" :expr false}
