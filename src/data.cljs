@@ -20,6 +20,7 @@
 "D@reduce@algorithm.iteration@1" {:lang "D" :algo "reduce" :lib "algorithm.iteration" :id 1 :doc "https://dlang.org/library/std/algorithm/iteration/reduce.html" :sig "-" :expr false}
 "D@fold@algorithm.iteration@1" {:lang "D" :algo "fold" :lib "algorithm.iteration" :id 1 :doc "https://dlang.org/library/std/algorithm/iteration/fold.html" :sig "-" :expr false}
 "Elixir@reduce@Enum@1" {:lang "Elixir" :algo "reduce" :lib "Enum" :id 1 :doc "https://hexdocs.pm/elixir/Enum.html#reduce/2" :sig "-" :expr false}
+"Erlang@foldl@lists@31" {:lang "Erlang" :algo "foldl" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#foldl/3" :sig "-" :expr false}
 "Excel@reduce@-@1" {:lang "Excel" :algo "reduce" :lib "-" :id 1 :doc "https://support.microsoft.com/en-us/office/reduce-function-42e39910-b345-45f3-84b8-0642b568b7cb" :sig "-" :expr false}
 "Haskell@foldl@Data.List@1" {:lang "Haskell" :algo "foldl" :lib "Data.List" :id 1 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:foldl" :sig "-" :expr false}
 "J@/ (insert)@-@1" {:lang "J" :algo "/ (insert)" :lib "-" :id 1 :doc "https://code.jsoftware.com/wiki/Vocabulary/slash" :sig "-" :expr false}
@@ -55,6 +56,7 @@
 "Common Lisp@map@-@2" {:lang "Common Lisp" :algo "map" :lib "-" :id 2 :doc "https://novaspec.org/cl/f_map" :sig "-" :expr false}
 "D@map@algorithm.iteration@2" {:lang "D" :algo "map" :lib "algorithm.iteration" :id 2 :doc "https://dlang.org/library/std/algorithm/iteration/map.html" :sig "-" :expr false}
 "Elixir@map@Enum@2" {:lang "Elixir" :algo "map" :lib "Enum" :id 2 :doc "https://hexdocs.pm/elixir/Enum.html#map/2" :sig "-" :expr false}
+"Erlang@map@lists@31" {:lang "Erlang" :algo "map" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#map/2" :sig "-" :expr false}
 "Excel@map@-@2" {:lang "Excel" :algo "map" :lib "-" :id 2 :doc "https://support.microsoft.com/en-us/office/map-function-48006093-f97c-47c1-bfcc-749263bb1f01" :sig "-" :expr false}
 "Gleam@map@list@2" {:lang "Gleam" :algo "map" :lib "list" :id 2 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map" :sig "-" :expr false}
 "Haskell@map@Data.List@2" {:lang "Haskell" :algo "map" :lib "Data.List" :id 2 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:map" :sig "-" :expr false}
@@ -83,6 +85,7 @@
 "Clojure@filter@core@3" {:lang "Clojure" :algo "filter" :lib "core" :id 3 :doc "https://clojuredocs.org/clojure.core/filter" :sig "-" :expr false}
 "D@filter@algorithm@3" {:lang "D" :algo "filter" :lib "algorithm" :id 3 :doc "https://dlang.org/library/std/algorithm/iteration/filter.html" :sig "-" :expr false}
 "Elixir@filter@Enum@3" {:lang "Elixir" :algo "filter" :lib "Enum" :id 3 :doc "https://hexdocs.pm/elixir/Enum.html#filter/2" :sig "-" :expr false}
+"Erlang@filter@lists@21" {:lang "Erlang" :algo "filter" :lib "lists" :id 21 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#filter/2" :sig "-" :expr false}
 "Excel@filter@-@3" {:lang "Excel" :algo "filter" :lib "-" :id 3 :doc "https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759" :sig "-" :expr false}
 "F#@where@various@3" {:lang "F#" :algo "where" :lib "various" :id 3 :doc "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule.html#where" :sig "-" :expr false}
 "F#@filter@List@3" {:lang "F#" :algo "filter" :lib "List" :id 3 :doc "https://msdn.microsoft.com/visualfsharpdocs/conceptual/list.filter%5b%27t%5d-function-%5bfsharp%5d" :sig "-" :expr false}
@@ -352,6 +355,7 @@
 "Clojure@some@core@20" {:lang "Clojure" :algo "some" :lib "core" :id 20 :doc "https://clojuredocs.org/clojure.core/some" :sig "-" :expr false}
 "D@any@algorithm.searching@20" {:lang "D" :algo "any" :lib "algorithm.searching" :id 20 :doc "https://dlang.org/library/std/algorithm/searching/any.html" :sig "-" :expr false}
 "Elixir@any?@Enum@20" {:lang "Elixir" :algo "any?" :lib "Enum" :id 20 :doc "https://hexdocs.pm/elixir/Enum.html#any?/2" :sig "-" :expr false}
+"Erlang@any@lists@31" {:lang "Erlang" :algo "any" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#any/2" :sig "-" :expr false}
 "F#@exists@List@20" {:lang "F#" :algo "exists" :lib "List" :id 20 :doc "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists" :sig "-" :expr false}
 "Haskell@any@Prelude@20" {:lang "Haskell" :algo "any" :lib "Prelude" :id 20 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:any" :sig "-" :expr false}
 "JavaScript@some@-@20" {:lang "JavaScript" :algo "some" :lib "-" :id 20 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some" :sig "-" :expr false}
@@ -486,6 +490,7 @@
 "D@all@std.algorithm@31" {:lang "D" :algo "all" :lib "std.algorithm" :id 31 :doc "https://dlang.org/library/std/algorithm/searching/all.all.html" :sig "-" :expr false}
 "Elixir@all?@Enum@31" {:lang "Elixir" :algo "all?" :lib "Enum" :id 31 :doc "https://hexdocs.pm/elixir/Enum.html#all?/2" :sig "-" :expr false}
 "Elm@all@List@31" {:lang "Elm" :algo "all" :lib "List" :id 31 :doc "https://package.elm-lang.org/packages/elm/core/latest/List#all" :sig "-" :expr false}
+"Erlang@all@lists@31" {:lang "Erlang" :algo "all" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#all/2" :sig "-" :expr false}
 "Haskell@all@Prelude@31" {:lang "Haskell" :algo "all" :lib "Prelude" :id 31 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/GHC-List.html#v:all" :sig "-" :expr false}
 "Java@allMatch@Streams@31" {:lang "Java" :algo "allMatch" :lib "Streams" :id 31 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#allMatch-java.util.function.Predicate-" :sig "-" :expr false}
 "JavaScript@every@-@31" {:lang "JavaScript" :algo "every" :lib "-" :id 31 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" :sig "-" :expr false}
@@ -538,6 +543,7 @@
 "CUDA@max_element@Thrust@37" {:lang "CUDA" :algo "max_element" :lib "Thrust" :id 37 :doc "https://nvidia.github.io/cccl/thrust/api/function_group__extrema_1gadd477c531dc4a4bf847f70ce73d01464.html" :sig "-" :expr false}
 "Common Lisp@max@-@37" {:lang "Common Lisp" :algo "max" :lib "-" :id 37 :doc "https://novaspec.org/cl/f_max" :sig "-" :expr false}
 "Elixir@max@Enum@37" {:lang "Elixir" :algo "max" :lib "Enum" :id 37 :doc "https://hexdocs.pm/elixir/Enum.html#max/1" :sig "-" :expr false}
+"Erlang@max@lists@31" {:lang "Erlang" :algo "max" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#max/1" :sig "-" :expr false}
 "Haskell@maximum@Prelude@37" {:lang "Haskell" :algo "maximum" :lib "Prelude" :id 37 :doc "https://hackage.haskell.org/package/base-4.21.0.0/docs/Prelude.html#v:maximum" :sig "-" :expr false}
 "Java@max@Streams@37" {:lang "Java" :algo "max" :lib "Streams" :id 37 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#max--" :sig "-" :expr false}
 "JavaScript@Math.max@-@37" {:lang "JavaScript" :algo "Math.max" :lib "-" :id 37 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max" :sig "-" :expr false}
@@ -555,6 +561,7 @@
 "CUDA@min_element@Thrust@38" {:lang "CUDA" :algo "min_element" :lib "Thrust" :id 38 :doc "https://nvidia.github.io/cccl/thrust/api/function_group__extrema_1ga70a05eafeff24c0553adcbb51d8f052a.html" :sig "-" :expr false}
 "Common Lisp@min@-@38" {:lang "Common Lisp" :algo "min" :lib "-" :id 38 :doc "https://novaspec.org/cl/f_max" :sig "-" :expr false}
 "Elixir@min@Enum@38" {:lang "Elixir" :algo "min" :lib "Enum" :id 38 :doc "https://hexdocs.pm/elixir/Enum.html#min/1" :sig "-" :expr false}
+"Erlang@min@lists@31" {:lang "Erlang" :algo "min" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#min/1" :sig "-" :expr false}
 "Haskell@minimum@Prelude@38" {:lang "Haskell" :algo "minimum" :lib "Prelude" :id 38 :doc "https://hackage.haskell.org/package/base-4.21.0.0/docs/Prelude.html#v:minimum" :sig "-" :expr false}
 "Java@min@Streams@38" {:lang "Java" :algo "min" :lib "Streams" :id 38 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#min--" :sig "-" :expr false}
 "JavaScript@Math.min@-@38" {:lang "JavaScript" :algo "Math.min" :lib "-" :id 38 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min" :sig "-" :expr false}
