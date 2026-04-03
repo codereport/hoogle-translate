@@ -748,4 +748,10 @@
 "Uiua@/↥@-@37" {:lang "Uiua" :algo "/↥" :lib "-" :id 37 :doc "" :sig "-" :expr true}
 "Rust@all_equal@itertools@51" {:lang "Rust" :algo "all_equal" :lib "itertools" :id 51 :doc "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.all_equal" :sig "-" :expr false}
 "C++@zip_transform@<ranges>@30" {:lang "C++" :algo "zip_transform" :lib "<ranges>" :id 30 :doc "https://en.cppreference.com/w/cpp/ranges/zip_transform_view.html" :sig "-" :expr false}
+"TinyAPL@~ (difference)@-@5770" {:lang "TinyAPL" :algo "~ (difference)" :lib "-" :id 5770 :doc "https://tinyapl.rubenverg.com/docs/primitive/difference" :sig "-" :expr false}
+"APL@~ (without)@-@5770" {:lang "APL" :algo "~ (without)" :lib "-" :id 5770 :doc "https://docs.dyalog.com/20.0/language-reference-guide/primitive-functions/without/" :sig "-" :expr false}
+"Kap@~ (without)@-@5770" {:lang "Kap" :algo "~ (without)" :lib "-" :id 5770 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_logical_notwithout" :sig "-" :expr false}
+"BQN@¬∘∊/⊣@-@5770" {:lang "BQN" :algo "¬∘∊/⊣" :lib "-" :id 5770 :doc "" :sig "-" :expr true}
+"J@-. (less)@-@5770" {:lang "J" :algo "-. (less)" :lib "-" :id 5770 :doc "https://code.jsoftware.com/wiki/Vocabulary/minusdot#dyadic" :sig "-" :expr false}
+"Uiua@▽¬⊸∊@-@5770" {:lang "Uiua" :algo "▽¬⊸∊" :lib "-" :id 5770 :doc "" :sig "-" :expr true}
 })
