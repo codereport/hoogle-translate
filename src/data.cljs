@@ -20,10 +20,12 @@
 "D@reduce@algorithm.iteration@1" {:lang "D" :algo "reduce" :lib "algorithm.iteration" :id 1 :doc "https://dlang.org/library/std/algorithm/iteration/reduce.html" :sig "-" :expr false}
 "D@fold@algorithm.iteration@1" {:lang "D" :algo "fold" :lib "algorithm.iteration" :id 1 :doc "https://dlang.org/library/std/algorithm/iteration/fold.html" :sig "-" :expr false}
 "Elixir@reduce@Enum@1" {:lang "Elixir" :algo "reduce" :lib "Enum" :id 1 :doc "https://hexdocs.pm/elixir/Enum.html#reduce/2" :sig "-" :expr false}
+"Erlang@foldl@lists@31" {:lang "Erlang" :algo "foldl" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#foldl/3" :sig "-" :expr false}
 "Excel@reduce@-@1" {:lang "Excel" :algo "reduce" :lib "-" :id 1 :doc "https://support.microsoft.com/en-us/office/reduce-function-42e39910-b345-45f3-84b8-0642b568b7cb" :sig "-" :expr false}
 "Haskell@foldl@Data.List@1" {:lang "Haskell" :algo "foldl" :lib "Data.List" :id 1 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:foldl" :sig "-" :expr false}
 "J@/ (insert)@-@1" {:lang "J" :algo "/ (insert)" :lib "-" :id 1 :doc "https://code.jsoftware.com/wiki/Vocabulary/slash" :sig "-" :expr false}
 "Java@reduce@Streams@1" {:lang "Java" :algo "reduce" :lib "Streams" :id 1 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#reduce-java.util.function.BinaryOperator-" :sig "-" :expr false}
+"JavaScript@reduce@-@1" {:lang "JavaScript" :algo "reduce" :lib "-" :id 1 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" :sig "-" :expr false}
 "JavaScript@reduce@ramda@1" {:lang "JavaScript" :algo "reduce" :lib "ramda" :id 1 :doc "https://ramdajs.com/docs/#reduce" :sig "-" :expr false}
 "Julia@reduce@Base@1" {:lang "Julia" :algo "reduce" :lib "Base" :id 1 :doc "https://docs.julialang.org/en/v1/base/collections/#Base.reduce-Tuple%7BAny,%20Any%7D" :sig "-" :expr false}
 "Kap@/ (reduce)@-@1" {:lang "Kap" :algo "/ (reduce)" :lib "-" :id 1 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_reduce" :sig "-" :expr false}
@@ -54,11 +56,13 @@
 "Common Lisp@map@-@2" {:lang "Common Lisp" :algo "map" :lib "-" :id 2 :doc "https://novaspec.org/cl/f_map" :sig "-" :expr false}
 "D@map@algorithm.iteration@2" {:lang "D" :algo "map" :lib "algorithm.iteration" :id 2 :doc "https://dlang.org/library/std/algorithm/iteration/map.html" :sig "-" :expr false}
 "Elixir@map@Enum@2" {:lang "Elixir" :algo "map" :lib "Enum" :id 2 :doc "https://hexdocs.pm/elixir/Enum.html#map/2" :sig "-" :expr false}
+"Erlang@map@lists@31" {:lang "Erlang" :algo "map" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#map/2" :sig "-" :expr false}
 "Excel@map@-@2" {:lang "Excel" :algo "map" :lib "-" :id 2 :doc "https://support.microsoft.com/en-us/office/map-function-48006093-f97c-47c1-bfcc-749263bb1f01" :sig "-" :expr false}
 "Gleam@map@list@2" {:lang "Gleam" :algo "map" :lib "list" :id 2 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map" :sig "-" :expr false}
 "Haskell@map@Data.List@2" {:lang "Haskell" :algo "map" :lib "Data.List" :id 2 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:map" :sig "-" :expr false}
 "J@each@-@2" {:lang "J" :algo "each" :lib "-" :id 2 :doc "https://www.jsoftware.com/help/primer/each.htm" :sig "-" :expr false}
 "Java@map@Streams@2" {:lang "Java" :algo "map" :lib "Streams" :id 2 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#map-java.util.function.Function-" :sig "-" :expr false}
+"JavaScript@map@-@2" {:lang "JavaScript" :algo "map" :lib "-" :id 2 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" :sig "-" :expr false}
 "JavaScript@map@ramda@2" {:lang "JavaScript" :algo "map" :lib "ramda" :id 2 :doc "https://ramdajs.com/docs/#map" :sig "-" :expr false}
 "Julia@map@Base@2" {:lang "Julia" :algo "map" :lib "Base" :id 2 :doc "https://docs.julialang.org/en/v1/base/collections/#Base.map" :sig "-" :expr false}
 "Kotlin@map@collections@2" {:lang "Kotlin" :algo "map" :lib "collections" :id 2 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/map.html" :sig "-" :expr false}
@@ -81,11 +85,13 @@
 "Clojure@filter@core@3" {:lang "Clojure" :algo "filter" :lib "core" :id 3 :doc "https://clojuredocs.org/clojure.core/filter" :sig "-" :expr false}
 "D@filter@algorithm@3" {:lang "D" :algo "filter" :lib "algorithm" :id 3 :doc "https://dlang.org/library/std/algorithm/iteration/filter.html" :sig "-" :expr false}
 "Elixir@filter@Enum@3" {:lang "Elixir" :algo "filter" :lib "Enum" :id 3 :doc "https://hexdocs.pm/elixir/Enum.html#filter/2" :sig "-" :expr false}
+"Erlang@filter@lists@21" {:lang "Erlang" :algo "filter" :lib "lists" :id 21 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#filter/2" :sig "-" :expr false}
 "Excel@filter@-@3" {:lang "Excel" :algo "filter" :lib "-" :id 3 :doc "https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759" :sig "-" :expr false}
 "F#@where@various@3" {:lang "F#" :algo "where" :lib "various" :id 3 :doc "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule.html#where" :sig "-" :expr false}
 "F#@filter@List@3" {:lang "F#" :algo "filter" :lib "List" :id 3 :doc "https://msdn.microsoft.com/visualfsharpdocs/conceptual/list.filter%5b%27t%5d-function-%5bfsharp%5d" :sig "-" :expr false}
 "Haskell@filter@Data.List@3" {:lang "Haskell" :algo "filter" :lib "Data.List" :id 3 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:filter" :sig "-" :expr false}
 "Java@filter@Streams@3" {:lang "Java" :algo "filter" :lib "Streams" :id 3 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#filter-java.util.function.Predicate-" :sig "-" :expr false}
+"JavaScript@filter@-@3" {:lang "JavaScript" :algo "filter" :lib "-" :id 3 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" :sig "-" :expr false}
 "JavaScript@filter@ramda@3" {:lang "JavaScript" :algo "filter" :lib "ramda" :id 3 :doc "https://ramdajs.com/docs/#filter" :sig "-" :expr false}
 "Julia@filter@Base@3" {:lang "Julia" :algo "filter" :lib "Base" :id 3 :doc "https://docs.julialang.org/en/v1/base/collections/#Base.filter" :sig "-" :expr false}
 "Kotlin@filter@collections@3" {:lang "Kotlin" :algo "filter" :lib "collections" :id 3 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/filter.html" :sig "-" :expr false}
@@ -289,6 +295,7 @@
 "Excel@textjoin@-@16" {:lang "Excel" :algo "textjoin" :lib "-" :id 16 :doc "https://support.microsoft.com/en-us/office/textjoin-function-357b449a-ec91-49d0-80c3-0e8fc845691c" :sig "-" :expr false}
 "Haskell@show@Prelude@16" {:lang "Haskell" :algo "show" :lib "Prelude" :id 16 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:show" :sig "-" :expr false}
 "J@\": (default format)@-@16" {:lang "J" :algo "\": (default format)" :lib "-" :id 16 :doc "https://code.jsoftware.com/wiki/Vocabulary/quoteco" :sig "-" :expr false}
+"JavaScript@toString@-@16" {:lang "JavaScript" :algo "toString" :lib "-" :id 16 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString" :sig "-" :expr false}
 "JavaScript@toString@ramda@16" {:lang "JavaScript" :algo "toString" :lib "ramda" :id 16 :doc "https://ramdajs.com/docs/#toString" :sig "-" :expr false}
 "Julia@string@Base@16" {:lang "Julia" :algo "string" :lib "Base" :id 16 :doc "https://docs.julialang.org/en/v1/base/strings/#Base.string" :sig "-" :expr false}
 "Mathematica@ToString@-@16" {:lang "Mathematica" :algo "ToString" :lib "-" :id 16 :doc "http://reference.wolfram.com/language/ref/ToString.html" :sig "-" :expr false}
@@ -307,6 +314,7 @@
 "Excel@= (equal)@-@17" {:lang "Excel" :algo "= (equal)" :lib "-" :id 17 :doc "" :sig "-" :expr false}
 "Go@Contains@slices@17" {:lang "Go" :algo "Contains" :lib "slices" :id 17 :doc "https://pkg.go.dev/slices#Contains" :sig "-" :expr false}
 "Haskell@elem@Prelude@17" {:lang "Haskell" :algo "elem" :lib "Prelude" :id 17 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:elem" :sig "-" :expr false}
+"JavaScript@includes@-@17" {:lang "JavaScript" :algo "includes" :lib "-" :id 17 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes" :sig "-" :expr false}
 "JavaScript@includes@ramda@17" {:lang "JavaScript" :algo "includes" :lib "ramda" :id 17 :doc "https://ramdajs.com/docs/#includes" :sig "-" :expr false}
 "Julia@in@Base@17" {:lang "Julia" :algo "in" :lib "Base" :id 17 :doc "https://docs.julialang.org/en/v1/base/collections/#Base.in" :sig "-" :expr false}
 "Julia@contains@Base@17" {:lang "Julia" :algo "contains" :lib "Base" :id 17 :doc "https://docs.julialang.org/en/v1/base/strings/#Base.contains" :sig "-" :expr false}
@@ -347,8 +355,10 @@
 "Clojure@some@core@20" {:lang "Clojure" :algo "some" :lib "core" :id 20 :doc "https://clojuredocs.org/clojure.core/some" :sig "-" :expr false}
 "D@any@algorithm.searching@20" {:lang "D" :algo "any" :lib "algorithm.searching" :id 20 :doc "https://dlang.org/library/std/algorithm/searching/any.html" :sig "-" :expr false}
 "Elixir@any?@Enum@20" {:lang "Elixir" :algo "any?" :lib "Enum" :id 20 :doc "https://hexdocs.pm/elixir/Enum.html#any?/2" :sig "-" :expr false}
+"Erlang@any@lists@31" {:lang "Erlang" :algo "any" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#any/2" :sig "-" :expr false}
 "F#@exists@List@20" {:lang "F#" :algo "exists" :lib "List" :id 20 :doc "https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists" :sig "-" :expr false}
 "Haskell@any@Prelude@20" {:lang "Haskell" :algo "any" :lib "Prelude" :id 20 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:any" :sig "-" :expr false}
+"JavaScript@some@-@20" {:lang "JavaScript" :algo "some" :lib "-" :id 20 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some" :sig "-" :expr false}
 "JavaScript@any@ramda@20" {:lang "JavaScript" :algo "any" :lib "ramda" :id 20 :doc "https://ramdajs.com/docs/#any" :sig "-" :expr false}
 "Julia@any@Base@20" {:lang "Julia" :algo "any" :lib "Base" :id 20 :doc "https://docs.julialang.org/en/v1/base/collections/#Base.any-Tuple%7BAny%7D" :sig "-" :expr false}
 "Kotlin@any@collections@20" {:lang "Kotlin" :algo "any" :lib "collections" :id 20 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/any.html" :sig "-" :expr false}
@@ -371,6 +381,7 @@
 "Go@Join@strings@21" {:lang "Go" :algo "Join" :lib "strings" :id 21 :doc "https://golang.org/pkg/strings/#Join" :sig "-" :expr false}
 "Go@Concat@slices@21" {:lang "Go" :algo "Concat" :lib "slices" :id 21 :doc "https://pkg.go.dev/slices#Concat" :sig "-" :expr false}
 "Haskell@concat@Prelude@21" {:lang "Haskell" :algo "concat" :lib "Prelude" :id 21 :doc "https://hackage.haskell.org/package/base-4.12.0.0/docs/Prelude.html#v:concat" :sig "-" :expr false}
+"JavaScript@join@-@21" {:lang "JavaScript" :algo "join" :lib "-" :id 21 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join" :sig "-" :expr false}
 "JavaScript@join@ramda@21" {:lang "JavaScript" :algo "join" :lib "ramda" :id 21 :doc "https://ramdajs.com/docs/#join" :sig "-" :expr false}
 "Julia@join@Base@21" {:lang "Julia" :algo "join" :lib "Base" :id 21 :doc "https://docs.julialang.org/en/v1/base/strings/#Base.join" :sig "-" :expr false}
 "Kotlin@joinTo@collections@21" {:lang "Kotlin" :algo "joinTo" :lib "collections" :id 21 :doc "https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/join-to.html" :sig "-" :expr false}
@@ -464,6 +475,7 @@
 "F#@map2@Seq@30" {:lang "F#" :algo "map2" :lib "Seq" :id 30 :doc "https://msdn.microsoft.com/visualfsharpdocs/conceptual/list.map2%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d" :sig "-" :expr false}
 "Gleam@map2@list@30" {:lang "Gleam" :algo "map2" :lib "list" :id 30 :doc "https://hexdocs.pm/gleam_stdlib/gleam/list.html#map2" :sig "-" :expr false}
 "Haskell@zipWith@Prelude@30" {:lang "Haskell" :algo "zipWith" :lib "Prelude" :id 30 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html#v:zipWith" :sig "-" :expr false}
+"JavaScript@map@-@30" {:lang "JavaScript" :algo "map" :lib "-" :id 30 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" :sig "-" :expr false}
 "JavaScript@map@ramda@30" {:lang "JavaScript" :algo "map" :lib "ramda" :id 30 :doc "https://ramdajs.com/docs/#map" :sig "-" :expr false}
 "Mathematica@MapThread@-@30" {:lang "Mathematica" :algo "MapThread" :lib "-" :id 30 :doc "http://reference.wolfram.com/language/ref/MapThread.html" :sig "-" :expr false}
 "OCaml@map2@List@30" {:lang "OCaml" :algo "map2" :lib "List" :id 30 :doc "https://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html" :sig "-" :expr false}
@@ -478,6 +490,7 @@
 "D@all@std.algorithm@31" {:lang "D" :algo "all" :lib "std.algorithm" :id 31 :doc "https://dlang.org/library/std/algorithm/searching/all.all.html" :sig "-" :expr false}
 "Elixir@all?@Enum@31" {:lang "Elixir" :algo "all?" :lib "Enum" :id 31 :doc "https://hexdocs.pm/elixir/Enum.html#all?/2" :sig "-" :expr false}
 "Elm@all@List@31" {:lang "Elm" :algo "all" :lib "List" :id 31 :doc "https://package.elm-lang.org/packages/elm/core/latest/List#all" :sig "-" :expr false}
+"Erlang@all@lists@31" {:lang "Erlang" :algo "all" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#all/2" :sig "-" :expr false}
 "Haskell@all@Prelude@31" {:lang "Haskell" :algo "all" :lib "Prelude" :id 31 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/GHC-List.html#v:all" :sig "-" :expr false}
 "Java@allMatch@Streams@31" {:lang "Java" :algo "allMatch" :lib "Streams" :id 31 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#allMatch-java.util.function.Predicate-" :sig "-" :expr false}
 "JavaScript@every@-@31" {:lang "JavaScript" :algo "every" :lib "-" :id 31 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" :sig "-" :expr false}
@@ -530,6 +543,7 @@
 "CUDA@max_element@Thrust@37" {:lang "CUDA" :algo "max_element" :lib "Thrust" :id 37 :doc "https://nvidia.github.io/cccl/thrust/api/function_group__extrema_1gadd477c531dc4a4bf847f70ce73d01464.html" :sig "-" :expr false}
 "Common Lisp@max@-@37" {:lang "Common Lisp" :algo "max" :lib "-" :id 37 :doc "https://novaspec.org/cl/f_max" :sig "-" :expr false}
 "Elixir@max@Enum@37" {:lang "Elixir" :algo "max" :lib "Enum" :id 37 :doc "https://hexdocs.pm/elixir/Enum.html#max/1" :sig "-" :expr false}
+"Erlang@max@lists@31" {:lang "Erlang" :algo "max" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#max/1" :sig "-" :expr false}
 "Haskell@maximum@Prelude@37" {:lang "Haskell" :algo "maximum" :lib "Prelude" :id 37 :doc "https://hackage.haskell.org/package/base-4.21.0.0/docs/Prelude.html#v:maximum" :sig "-" :expr false}
 "Java@max@Streams@37" {:lang "Java" :algo "max" :lib "Streams" :id 37 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#max--" :sig "-" :expr false}
 "JavaScript@Math.max@-@37" {:lang "JavaScript" :algo "Math.max" :lib "-" :id 37 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max" :sig "-" :expr false}
@@ -547,6 +561,7 @@
 "CUDA@min_element@Thrust@38" {:lang "CUDA" :algo "min_element" :lib "Thrust" :id 38 :doc "https://nvidia.github.io/cccl/thrust/api/function_group__extrema_1ga70a05eafeff24c0553adcbb51d8f052a.html" :sig "-" :expr false}
 "Common Lisp@min@-@38" {:lang "Common Lisp" :algo "min" :lib "-" :id 38 :doc "https://novaspec.org/cl/f_max" :sig "-" :expr false}
 "Elixir@min@Enum@38" {:lang "Elixir" :algo "min" :lib "Enum" :id 38 :doc "https://hexdocs.pm/elixir/Enum.html#min/1" :sig "-" :expr false}
+"Erlang@min@lists@31" {:lang "Erlang" :algo "min" :lib "lists" :id 31 :doc "https://www.erlang.org/doc/apps/stdlib/lists.html#min/1" :sig "-" :expr false}
 "Haskell@minimum@Prelude@38" {:lang "Haskell" :algo "minimum" :lib "Prelude" :id 38 :doc "https://hackage.haskell.org/package/base-4.21.0.0/docs/Prelude.html#v:minimum" :sig "-" :expr false}
 "Java@min@Streams@38" {:lang "Java" :algo "min" :lib "Streams" :id 38 :doc "https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#min--" :sig "-" :expr false}
 "JavaScript@Math.min@-@38" {:lang "JavaScript" :algo "Math.min" :lib "-" :id 38 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min" :sig "-" :expr false}
@@ -570,6 +585,7 @@
 "Elixir@++@Kernel@42" {:lang "Elixir" :algo "++" :lib "Kernel" :id 42 :doc "https://hexdocs.pm/elixir/Kernel.html#++/2" :sig "-" :expr false}
 "Go@append@-@42" {:lang "Go" :algo "append" :lib "-" :id 42 :doc "https://pkg.go.dev/builtin#append" :sig "-" :expr false}
 "Haskell@++@Prelude@42" {:lang "Haskell" :algo "++" :lib "Prelude" :id 42 :doc "https://hackage.haskell.org/package/base-4.14.0.0/docs/Prelude.html#v:-43--43-" :sig "-" :expr false}
+"JavaScript@concat@-@42" {:lang "JavaScript" :algo "concat" :lib "-" :id 42 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" :sig "-" :expr false}
 "JavaScript@concat@ramda@42" {:lang "JavaScript" :algo "concat" :lib "ramda" :id 42 :doc "https://ramdajs.com/docs/#concat" :sig "-" :expr false}
 "Julia@vcat@Base@42" {:lang "Julia" :algo "vcat" :lib "Base" :id 42 :doc "https://docs.julialang.org/en/v1/base/arrays/#Base.vcat" :sig "-" :expr false}
 "Julia@append!@Base@42" {:lang "Julia" :algo "append!" :lib "Base" :id 42 :doc "https://docs.julialang.org/en/v1/base/collections/#Base.append!" :sig "-" :expr false}
@@ -634,6 +650,7 @@
 "C++@reverse@<ranges>@4321" {:lang "C++" :algo "reverse" :lib "<ranges>" :id 4321 :doc "https://en.cppreference.com/w/cpp/algorithm/ranges/reverse" :sig "-" :expr false}
 "Go@Reverse@slices@4321" {:lang "Go" :algo "Reverse" :lib "slices" :id 4321 :doc "https://pkg.go.dev/slices#Reverse" :sig "-" :expr false}
 "J@|. (reverse)@-@4321" {:lang "J" :algo "|. (reverse)" :lib "-" :id 4321 :doc "https://code.jsoftware.com/wiki/Vocabulary/bardot" :sig "-" :expr false}
+"JavaScript@reverse@-@4321" {:lang "JavaScript" :algo "reverse" :lib "-" :id 4321 :doc "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse" :sig "-" :expr false}
 "JavaScript@reverse@ramda@4321" {:lang "JavaScript" :algo "reverse" :lib "ramda" :id 4321 :doc "https://ramdajs.com/docs/#reverse" :sig "-" :expr true}
 "Julia@reverse@Base@4321" {:lang "Julia" :algo "reverse" :lib "Base" :id 4321 :doc "https://docs.julialang.org/en/v1/base/arrays/#Base.reverse-Tuple%7BAbstractVector%7D" :sig "-" :expr false}
 "Kap@⌽ (reverse)@-@4321" {:lang "Kap" :algo "⌽ (reverse)" :lib "-" :id 4321 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_rotate_horizontallyreverse_horizontally" :sig "-" :expr false}
@@ -730,4 +747,11 @@
 "Kap@⌈/@-@37" {:lang "Kap" :algo "⌈/" :lib "-" :id 37 :doc "" :sig "-" :expr true}
 "Uiua@/↥@-@37" {:lang "Uiua" :algo "/↥" :lib "-" :id 37 :doc "" :sig "-" :expr true}
 "Rust@all_equal@itertools@51" {:lang "Rust" :algo "all_equal" :lib "itertools" :id 51 :doc "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.all_equal" :sig "-" :expr false}
+"C++@zip_transform@<ranges>@30" {:lang "C++" :algo "zip_transform" :lib "<ranges>" :id 30 :doc "https://en.cppreference.com/w/cpp/ranges/zip_transform_view.html" :sig "-" :expr false}
+"TinyAPL@~ (difference)@-@5770" {:lang "TinyAPL" :algo "~ (difference)" :lib "-" :id 5770 :doc "https://tinyapl.rubenverg.com/docs/primitive/difference" :sig "-" :expr false}
+"APL@~ (without)@-@5770" {:lang "APL" :algo "~ (without)" :lib "-" :id 5770 :doc "https://docs.dyalog.com/20.0/language-reference-guide/primitive-functions/without/" :sig "-" :expr false}
+"Kap@~ (without)@-@5770" {:lang "Kap" :algo "~ (without)" :lib "-" :id 5770 :doc "https://kapdemo.dhsdevelopments.com/reference.html#_logical_notwithout" :sig "-" :expr false}
+"BQN@¬∘∊/⊣@-@5770" {:lang "BQN" :algo "¬∘∊/⊣" :lib "-" :id 5770 :doc "" :sig "-" :expr true}
+"J@-. (less)@-@5770" {:lang "J" :algo "-. (less)" :lib "-" :id 5770 :doc "https://code.jsoftware.com/wiki/Vocabulary/minusdot#dyadic" :sig "-" :expr false}
+"Uiua@▽¬⊸∊@-@5770" {:lang "Uiua" :algo "▽¬⊸∊" :lib "-" :id 5770 :doc "" :sig "-" :expr true}
 })
