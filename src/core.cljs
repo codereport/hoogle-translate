@@ -198,6 +198,14 @@
         (str (subs base-filename 0 dot-pos) "_darkmode" (subs base-filename dot-pos)))
       base-filename)))
 
+(defn logo-img [lang theme]
+  (let [wide? (contains? imgs/wide-logos lang)]
+    [:img {:src   (str imgs/logo-base-url (get-logo-filename lang theme))
+           :height "40px"
+           :width  (if wide? "auto" "40px")
+           :style  (merge {:object-fit "contain"}
+                          (when wide? {:max-width "40px"}))}]))
+
 (defn generate-row [info-map color-index]
   (let [current-theme (@state :theme)
         colors (get styles/theme-colors current-theme)
@@ -238,10 +246,7 @@
                                                :selection lang-name
                                                :how-to-generate-table :by-lang
                                                :results-table (generate-table lang-name :by-lang)}))))}
-      [:img {:src (str/join ["/media/logos/" (get-logo-filename (get info-map :lang) current-theme)]) 
-             :width "40px" 
-             :height "40px"
-             :style {:object-fit "contain"}}]]
+      [logo-img (get info-map :lang) current-theme]]
      
      ;; Second cell - language name
      [:td {:style {:padding "12px 30px"
@@ -370,10 +375,7 @@
                                              :selection language-name
                                              :how-to-generate-table :by-lang
                                              :results-table (generate-table language-name :by-lang)})))}
-      [:img {:src (str/join ["/media/logos/" (get-logo-filename language-name current-theme)]) 
-             :width "40px" 
-             :height "40px"
-             :style {:object-fit "contain"}}]]
+      [logo-img language-name current-theme]]
      
      ;; Language name cell
      [:td {:style {:padding "12px 30px" :color text-color}
