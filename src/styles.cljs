@@ -78,7 +78,7 @@
      :background-color (:background colors)
      :color (:text colors)
      :min-height "100vh"
-     :overflow "auto"}))
+     :box-sizing "border-box"}))
 
 (defn heading-style [theme]
   (let [colors (get theme-colors theme)]
