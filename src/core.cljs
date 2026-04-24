@@ -579,7 +579,7 @@
                             (.appendChild (.-head js/document) el)
                             el))]
     (set! (.-innerHTML style-element) 
-          (str "body { background-color: " (:background colors) "; margin: 0; padding: 0; }"
+          (str "html, body { background-color: " (:background colors) "; margin: 0; padding: 0; overflow: auto; }"
                ".footnote-link { color: " (:text colors) " !important; }"
                ".footnote-link:visited { color: " (:text colors) " !important; }"
                ".footnote-link:hover { color: " (:text colors) " !important; }"

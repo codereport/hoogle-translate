@@ -77,7 +77,8 @@
      :padding padding
      :background-color (:background colors)
      :color (:text colors)
-     :min-height "100vh"}))
+     :min-height "100vh"
+     :overflow "auto"}))
 
 (defn heading-style [theme]
   (let [colors (get theme-colors theme)]
